@@ -72,6 +72,10 @@ function blob_fixup() {
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s|my_product|product|" "${2}"
             ;;
+        vendor/lib64/hw/com.qti.chi.override.so)
+            "${SIGSCAN}" -p "9B 2B 04 94" -P "1F 20 03 D5" -f "${2}"
+            "${SIGSCAN}" -p "46 23 04 94" -P "1F 20 03 D5" -f "${2}"
+            ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             "${SIGSCAN}" -p "AB 0B 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
