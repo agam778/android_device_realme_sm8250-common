@@ -49,8 +49,11 @@ void vendor_load_properties() {
         case 21619: // bitra CN
             OverrideProperty("ro.product.product.device", "RE5473");
             break;
-        case 2161A: // bitra CN (Dragon Ball Edition)
-            OverrideProperty("ro.product.product.device", "RE5473");
+        case 136858: // Global
+            OverrideProperty("ro.product.product.device", "RE879AL1");
+            break;
+        case 136859: // EU
+            OverrideProperty("ro.product.product.device", "RE879AL1");
             break;
         default:
             LOG(ERROR) << "Unexpected project version: " << prj_version;
