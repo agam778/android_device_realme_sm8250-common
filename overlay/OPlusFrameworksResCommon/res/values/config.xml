@@ -136,10 +136,10 @@
     </array>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
-    <integer name="config_screenBrightnessDim">6</integer>
+    <integer name="config_screenBrightnessDim">13</integer>
 
     <!-- Screen brightness when dozing. -->
-    <integer name="config_screenBrightnessDoze">55</integer>
+    <integer name="config_screenBrightnessDoze">75</integer>
 
     <!-- True if the display hardware only has brightness buckets rather than a full range of
          backlight values -->
@@ -147,15 +147,15 @@
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">102</integer>
+    <integer name="config_screenBrightnessSettingDefault">83</integer>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">4</integer>
+    <integer name="config_screenBrightnessSettingMinimum">8</integer>
 
     <!-- Maximum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness above this level. -->
-    <integer name="config_screenBrightnessSettingMaximum">255</integer>
+    <integer name="config_screenBrightnessSettingMaximum">196</integer>
 
     <!-- Minimum screen brightness setting allowed by power manager.
         The user is forbidden from setting the brightness below this level.
@@ -165,13 +165,13 @@
     <!-- Maximum screen brightness allowed by the power manager.
          The user is forbidden from setting the brightness above this level.
          This value is a fraction between 3.5% and 100%. -->
-    <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
+    <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">0.75</item>
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum.
          This value is a fraction between 3.5% and 100%.
          Equivalent to 102/255 (default for this device)    -->
-    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.4</item>
+    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.25</item>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
@@ -439,7 +439,8 @@
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
 
          This array should be equal in size to config_screenBrightnessBacklight -->
-    <array name="config_screenBrightnessNits">
+     
+     <array name="config_screenBrightnessNits">
         <item>4.5</item>
         <item>6.6</item>
         <item>8.0</item>
@@ -563,153 +564,407 @@
         <item>700.0</item>
         <item>705.0</item>
         <item>710.0</item>
-        <item>712.0</item>
-        <item>714.0</item>
-        <item>716.0</item>
-        <item>718.0</item>
+        <item>715.0</item>
         <item>720.0</item>
-        <item>722.0</item>
         <item>725.0</item>
-        <item>728.0</item>
         <item>730.0</item>
-        <item>732.0</item>
         <item>735.0</item>
-        <item>738.0</item>
         <item>740.0</item>
-        <item>742.9</item>
         <item>745.0</item>
-        <item>748.0</item>
         <item>750.0</item>
-        <item>752.7</item>
-        <item>756.1</item>
-        <item>760.9</item>
-        <item>764.3</item>
-        <item>768.0</item>
-        <item>772.0</item>
-        <item>776.1</item>
-        <item>780.0</item>
-        <item>784.0</item>
-        <item>788.7</item>
-        <item>792.0</item>
-        <item>796.9</item>
-        <item>800.3</item>
-        <item>805.8</item>
-        <item>810.0</item>
-        <item>815.0</item>
-        <item>820.3</item>
-        <item>825.0</item>
-        <item>830.6</item>
-        <item>834.9</item>
-        <item>838.0</item>
-        <item>842.9</item>
-        <item>846.0</item>
-        <item>850.1</item>
-        <item>854.0</item>
-        <item>858.4</item>
-        <item>862.7</item>
-        <item>866.9</item>
-        <item>870.1</item>
-        <item>874.0</item>
-        <item>878.0</item>
-        <item>882.0</item>
-        <item>886.2</item>
-        <item>890.2</item>
-        <item>894.0</item>
-        <item>902.1</item>
-        <item>905.8</item>
-        <item>910.1</item>
-        <item>915.0</item>
+        <item>755.0</item>
+        <item>760.0</item>
+        <item>765.0</item>
+        <item>770.0</item>
+        <item>775.0</item>
+        <item>789.9</item>
+        <item>796.0</item>
+        <item>800.0</item>
+        <item>806.0</item>
+        <item>816.7</item>
+        <item>822.1</item>
+        <item>827.9</item>
+        <item>833.3</item>
+        <item>837.0</item>
+        <item>841.0</item>
+        <item>848.1</item>
+        <item>850.0</item>
+        <item>859.0</item>
+        <item>866.7</item>
+        <item>871.0</item>
+        <item>875.9</item>
+        <item>883.3</item>
+        <item>894.8</item>
+        <item>900.0</item>
+        <item>904.0</item>
+        <item>914.3</item>
         <item>920.0</item>
-        <item>925.4</item>
-        <item>930.1</item>
-        <item>938.0</item>
-        <item>946.6</item>
-        <item>954.7</item>
-        <item>962.2</item>
-        <item>965.0</item>
-        <item>968.0</item>
-        <item>972.3</item>
-        <item>975.1</item>
-        <item>978.0</item>
-        <item>982.5</item>
-        <item>985.9</item>
-        <item>988.1</item>
-        <item>992.0</item>
-        <item>995.0</item>
-        <item>998.4</item>
-        <item>1002.0</item>
-        <item>1005.1</item>
-        <item>1007.1</item>
-        <item>1009.0</item>
-        <item>1011.1</item>
-        <item>1013.0</item>
+        <item>928.6</item>
+        <item>932.9</item>
+        <item>937.0</item>
+        <item>942.9</item>
+        <item>951.0</item>
+        <item>957.1</item>
+        <item>966.0</item>
+        <item>971.4</item>
+        <item>985.7</item>
+        <item>993.9</item>
+        <item>997.1</item>
+        <item>1000.0</item>
+        <item>1004.0</item>
+        <item>1012.0</item>
+        <item>1018.2</item>
+        <item>1021.2</item>
         <item>1024.0</item>
-        <item>1029.7</item>
+        <item>1027.1</item>
+        <item>1031.8</item>
         <item>1033.1</item>
-        <item>1037.1</item>
-        <item>1041.4</item>
-        <item>1044.0</item>
-        <item>1048.5</item>
-        <item>1053.1</item>
-        <item>1056.0</item>
-        <item>1059.0</item>
-        <item>1063.0</item>
-        <item>1067.0</item>
-        <item>1069.8</item>
-        <item>1072.0</item>
-        <item>1075.0</item>
-        <item>1079.9</item>
+        <item>1034.0</item>
+        <item>1037.0</item>
+        <item>1042.4</item>
+        <item>1045.1</item>
+        <item>1047.0</item>
+        <item>1053.6</item>
+        <item>1054.7</item>
+        <item>1057.2</item>
+        <item>1060.0</item>
+        <item>1062.0</item>
+        <item>1065.3</item>
+        <item>1069.1</item>
+        <item>1070.0</item>
+        <item>1072.5</item>
+        <item>1073.9</item>
+        <item>1077.1</item>
+        <item>1081.0</item>
         <item>1084.0</item>
-        <item>1090.0</item>
-        <item>1091.0</item>
-        <item>1094.0</item>
-        <item>1096.0</item>
-        <item>1099.0</item>
-        <item>1101.0</item>
-        <item>1105.1</item>
-        <item>1107.0</item>
-        <item>1109.0</item>
-        <item>1114.0</item>
-        <item>1118.4</item>
-        <item>1121.1</item>
-        <item>1124.7</item>
-        <item>1129.2</item>
-        <item>1131.0</item>
-        <item>1134.6</item>
+        <item>1089.4</item>
+        <item>1095.0</item>
+        <item>1099.1</item>
+        <item>1102.1</item>
+        <item>1108.0</item>
+        <item>1116.1</item>
+        <item>1119.0</item>
+        <item>1124.0</item>
+        <item>1129.7</item>
+        <item>1133.1</item>
         <item>1137.1</item>
-        <item>1138.9</item>
+        <item>1141.4</item>
         <item>1144.0</item>
-        <item>1145.9</item>
-        <item>1150.0</item>
+        <item>1148.5</item>
+        <item>1153.1</item>
         <item>1156.0</item>
-        <item>1158.9</item>
-        <item>1163.1</item>
-        <item>1167.1</item>
-        <item>1171.4</item>
-        <item>1179.0</item>
-        <item>1185.0</item>
+        <item>1159.0</item>
+        <item>1163.0</item>
+        <item>1167.0</item>
+        <item>1169.8</item>
+        <item>1172.0</item>
+        <item>1175.0</item>
+        <item>1179.9</item>
+        <item>1184.0</item>
         <item>1190.0</item>
-        <item>1194.1</item>
-        <item>1196.8</item>
-        <item>1200.0</item>
+        <item>1191.0</item>
+        <item>1194.0</item>
+        <item>1196.0</item>
+        <item>1199.0</item>
+        <item>1201.0</item>
+        <item>1205.1</item>
+        <item>1207.0</item>
+        <item>1209.0</item>
+        <item>1214.0</item>
+        <item>1218.4</item>
+        <item>1221.1</item>
+        <item>1224.7</item>
+        <item>1229.2</item>
+        <item>1231.0</item>
+        <item>1234.6</item>
+        <item>1237.1</item>
+        <item>1238.9</item>
+        <item>1244.0</item>
+        <item>1245.9</item>
+        <item>1250.0</item>
+        <item>1256.0</item>
+        <item>1258.9</item>
+        <item>1263.1</item>
+        <item>1267.1</item>
+        <item>1271.4</item>
+        <item>1279.0</item>
+        <item>1285.0</item>
+        <item>1290.0</item>
+        <item>1294.1</item>
+        <item>1296.8</item>
+        <item>1300.0</item>
     </array>
-
+    <!--
+<item>4.2</item>
+          <item>6.1</item>
+          <item>8.0</item>
+          <item>9.9</item>
+          <item>11.8</item>
+          <item>13.7</item>
+          <item>15.6</item>
+          <item>17.5</item>
+          <item>19.4</item>
+          <item>21.3</item>
+          <item>23.2</item>
+          <item>25.1</item>
+          <item>27.0</item>
+          <item>28.9</item>
+          <item>30.8</item>
+          <item>32.7</item>
+          <item>34.6</item>
+          <item>36.5</item>
+          <item>38.4</item>
+          <item>40.3</item>
+          <item>42.2</item>
+          <item>44.1</item>
+          <item>46.0</item>
+          <item>47.9</item>
+          <item>49.8</item>
+          <item>51.7</item>
+          <item>53.6</item>
+          <item>55.5</item>
+          <item>57.4</item>
+          <item>59.3</item>
+          <item>61.2</item>
+          <item>63.1</item>
+          <item>65.0</item>
+          <item>66.9</item>
+          <item>68.8</item>
+          <item>70.7</item>
+          <item>72.6</item>
+          <item>74.5</item>
+          <item>76.4</item>
+          <item>78.3</item>
+          <item>80.2</item>
+          <item>82.1</item>
+          <item>84.0</item>
+          <item>85.9</item>
+          <item>87.8</item>
+          <item>89.7</item>
+          <item>91.6</item>
+          <item>93.5</item>
+          <item>95.4</item>
+          <item>97.3</item>
+          <item>99.2</item>
+          <item>101.1</item>
+          <item>103.0</item>
+          <item>104.9</item>
+          <item>106.8</item>
+          <item>108.7</item>
+          <item>110.6</item>
+          <item>112.5</item>
+          <item>114.4</item>
+          <item>116.3</item>
+          <item>118.2</item>
+          <item>120.1</item>
+          <item>122.0</item>
+          <item>123.9</item>
+          <item>125.8</item>
+          <item>127.7</item>
+          <item>129.6</item>
+          <item>131.5</item>
+          <item>133.4</item>
+          <item>135.3</item>
+          <item>137.2</item>
+          <item>139.1</item>
+          <item>141.0</item>
+          <item>142.9</item>
+          <item>144.8</item>
+          <item>146.7</item>
+          <item>148.6</item>
+          <item>150.5</item>
+          <item>152.4</item>
+          <item>154.3</item>
+          <item>156.2</item>
+          <item>158.1</item>
+          <item>160.0</item>
+          <item>161.9</item>
+          <item>163.8</item>
+          <item>165.7</item>
+          <item>167.6</item>
+          <item>169.5</item>
+          <item>171.4</item>
+          <item>173.3</item>
+          <item>175.2</item>
+          <item>177.1</item>
+          <item>179.0</item>
+          <item>180.9</item>
+          <item>182.8</item>
+          <item>184.7</item>
+          <item>186.6</item>
+          <item>188.5</item>
+          <item>190.4</item>
+          <item>192.3</item>
+          <item>194.2</item>
+          <item>196.1</item>
+          <item>198.0</item>
+          <item>199.9</item>
+          <item>201.8</item>
+          <item>203.7</item>
+          <item>205.6</item>
+          <item>207.5</item>
+          <item>209.4</item>
+          <item>211.3</item>
+          <item>213.2</item>
+          <item>215.1</item>
+          <item>217.0</item>
+          <item>218.9</item>
+          <item>220.8</item>
+          <item>222.7</item>
+          <item>224.6</item>
+          <item>226.5</item>
+          <item>228.4</item>
+          <item>230.3</item>
+          <item>232.2</item>
+          <item>234.1</item>
+          <item>236.0</item>
+          <item>237.9</item>
+          <item>239.8</item>
+          <item>241.7</item>
+          <item>243.6</item>
+          <item>245.5</item>
+          <item>247.4</item>
+          <item>249.3</item>
+          <item>251.2</item>
+          <item>253.1</item>
+          <item>255.0</item>
+          <item>256.9</item>
+          <item>258.8</item>
+          <item>260.7</item>
+          <item>262.6</item>
+          <item>264.5</item>
+          <item>266.4</item>
+          <item>268.3</item>
+          <item>270.2</item>
+          <item>272.1</item>
+          <item>274.0</item>
+          <item>275.9</item>
+          <item>277.8</item>
+          <item>279.7</item>
+          <item>281.6</item>
+          <item>283.5</item>
+          <item>285.4</item>
+          <item>287.3</item>
+          <item>289.2</item>
+          <item>291.1</item>
+          <item>293.0</item>
+          <item>294.9</item>
+          <item>296.8</item>
+          <item>298.7</item>
+          <item>300.6</item>
+          <item>302.5</item>
+          <item>304.4</item>
+          <item>306.3</item>
+          <item>308.2</item>
+          <item>310.1</item>
+          <item>312.0</item>
+          <item>313.9</item>
+          <item>315.8</item>
+          <item>317.7</item>
+          <item>319.6</item>
+          <item>321.5</item>
+          <item>323.4</item>
+          <item>325.3</item>
+          <item>327.2</item>
+          <item>329.1</item>
+          <item>331.0</item>
+          <item>332.9</item>
+          <item>334.8</item>
+          <item>336.7</item>
+          <item>338.6</item>
+          <item>340.5</item>
+          <item>342.4</item>
+          <item>344.3</item>
+          <item>346.2</item>
+          <item>348.1</item>
+          <item>350.0</item>
+          <item>351.9</item>
+          <item>353.8</item>
+          <item>355.7</item>
+          <item>357.6</item>
+          <item>359.5</item>
+          <item>361.4</item>
+          <item>363.3</item>
+          <item>365.2</item>
+          <item>367.1</item>
+          <item>369.0</item>
+          <item>370.9</item>
+          <item>372.8</item>
+          <item>374.7</item>
+          <item>376.6</item>
+          <item>378.5</item>
+          <item>380.4</item>
+          <item>382.3</item>
+          <item>384.2</item>
+          <item>386.1</item>
+          <item>388.0</item>
+          <item>389.9</item>
+          <item>391.8</item>
+          <item>393.7</item>
+          <item>395.6</item>
+          <item>397.5</item>
+          <item>399.4</item>
+          <item>401.3</item>
+          <item>403.2</item>
+          <item>405.1</item>
+          <item>407.0</item>
+          <item>408.9</item>
+          <item>410.8</item>
+          <item>412.7</item>
+          <item>414.6</item>
+          <item>416.5</item>
+          <item>418.4</item>
+          <item>420.3</item>
+          <item>422.2</item>
+          <item>424.1</item>
+          <item>426.0</item>
+          <item>427.9</item>
+          <item>429.8</item>
+          <item>431.7</item>
+          <item>433.6</item>
+          <item>435.5</item>
+          <item>437.4</item>
+          <item>439.3</item>
+          <item>441.2</item>
+          <item>443.1</item>
+          <item>445.0</item>
+          <item>446.9</item>
+          <item>448.8</item>
+          <item>450.7</item>
+          <item>452.6</item>
+          <item>454.5</item>
+          <item>456.4</item>
+          <item>458.3</item>
+          <item>460.2</item>
+          <item>462.1</item>
+          <item>464.0</item>
+          <item>465.9</item>
+          <item>467.8</item>
+          <item>469.7</item>
+          <item>471.6</item>
+          <item>473.5</item>
+          <item>475.4</item>
+          <item>477.3</item>
+          <item>479.2</item>
+          <item>481.1</item>
+          -->
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
-        <item>17</item>
+        <item>12</item>
+        <item>7</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
-        <item>28</item>
+        <item>12</item>
+        <item>7</item>
     </integer-array>
 
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
-        <item>0</item>
-        <item>17</item>
+        <item>10</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about hitting a scroll barrier -->
@@ -724,6 +979,7 @@
     <integer-array name="config_availableColorModes">
         <item>0</item>
         <item>1</item>
+        <item>2</item>
         <item>3</item>
     </integer-array>
 
