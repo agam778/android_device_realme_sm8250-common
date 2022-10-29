@@ -52,22 +52,22 @@
         <point>60,-1700</point>
         <point>100,0</point>
     #else /* */ -->
-        <point>1,-5000</point>
-        <point>10,-4100</point>
-        <point>20,-3530</point>
-        <point>30,-2950</point>
-        <point>40,-2350</point>
-        <point>50,-1940</point>
-        <point>60,-1740</point>
-        <point>70,-1640</point>
-        <point>80,-1450</point>
-        <point>90,-1240</point>
-        <point>100,-995</point>
-        <point>110,-750</point>
-        <point>120,-650</point>
-        <point>130,-550</point>
-        <point>140,-440</point>
-        <point>150,-240</point>
+        <point>1,-6500</point>
+        <point>10,-5700</point>
+        <point>20,-5530</point>
+        <point>30,-4950</point>
+        <point>40,-4350</point>
+        <point>50,-3740</point>
+        <point>60,-3140</point>
+        <point>70,-2840</point>
+        <point>80,-2550</point>
+        <point>90,-2240</point>
+        <point>100,-1995</point>
+        <point>110,-1650</point>
+        <point>120,-1350</point>
+        <point>130,-1050</point>
+        <point>140,-740</point>
+        <point>150,-440</point>
         <point>160,-150</point>
     <!-- #endif /* */ -->
     </reference>
@@ -75,7 +75,7 @@
     //Qinhui.Gu@PSW.MM.AudioServer.Policy, 2019/12/11, add USB_HEADSET device category for tuning separately -->
     <reference name="DEFAULT_MEDIA_VOLUME_CURVE_USB_HEADSET">
     <!-- USB_HEADSET Media reference Volume Curve -->
-        <point>1,-7000</point>
+        <point>1,-6500</point>
         <point>10,-6200</point>
         <point>20,-5600</point>
         <point>30,-5000</point>
@@ -104,7 +104,7 @@
         <point>60,-1700</point>
         <point>100,0</point>
     #else /* */ -->
-        <point>1,-5600</point>
+        <point>1,-6500</point>
         <point>10,-5200</point>
         <point>20,-4800</point>
         <point>30,-4400</point>
@@ -140,22 +140,22 @@
         <point>60,-1700</point>
         <point>100,0</point>
     #else /* */ -->
-        <point>1,-4500</point>
-        <point>10,-4230</point>
-        <point>20,-3800</point>
-        <point>30,-3580</point>
-        <point>40,-3280</point>
-        <point>50,-2820</point>
-        <point>60,-2575</point>
-        <point>70,-2050</point>
+        <point>1,-5500</point>
+        <point>10,-5030</point>
+        <point>20,-4200</point>
+        <point>30,-3280</point>
+        <point>40,-2780</point>
+        <point>50,-2320</point>
+        <point>60,-1975</point>
+        <point>70,-1650</point>
         <point>80,-1510</point>
-        <point>90,-1000</point>
-        <point>100,-830</point>
-        <point>110,-670</point>
-        <point>120,-430</point>
-        <point>130,-350</point>
-        <point>140,-200</point>
-        <point>150,-100</point>
+        <point>90,-1370</point>
+        <point>100,-1230</point>
+        <point>110,-1070</point>
+        <point>120,-930</point>
+        <point>130,-650</point>
+        <point>140,-400</point>
+        <point>150,-200</point>
         <point>160,0</point>
     <!-- #endif /* */ -->
     </reference>
