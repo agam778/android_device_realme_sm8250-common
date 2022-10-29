@@ -42,6 +42,10 @@ on init
     write /dev/stune/top-app/schedtune.colocate 1
     wait /dev/block/platform/soc/1d84000.ufshc
     symlink /dev/block/platform/soc/1d84000.ufshc /dev/block/bootdevice
+    chown system system /dev/cpu_dma_latency
+    chmod 0664 /dev/cpu_dma_latency
+    chown system system /dev/stune/top-app/schedtune.boost
+    chmod 0664 /dev/stune/top-app/schedtune.boost
     chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     start logd
