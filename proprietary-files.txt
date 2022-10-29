@@ -1401,6 +1401,9 @@ system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/framework/qcrilhook.jar
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so
+system_ext/lib64/vendor.qti.ims.factory@1.1.so
+system_ext/lib64/vendor.qti.ims.factory@2.0.so
 vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrild
 vendor/bin/ATFWD-daemon
@@ -1479,6 +1482,7 @@ vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so
+system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so
