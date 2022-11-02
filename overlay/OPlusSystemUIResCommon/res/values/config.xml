@@ -33,4 +33,9 @@
     -->
     <integer name="config_udfpsHbmType">0</integer>
 
+     <!-- Correct Battery Info values -->
+    <integer name="config_currentInfoDivider" translatable="false">1</integer>
+    
+     <!-- UDFPS Off Screen -->
+    <integer name="config_udfpsVendorCode">0</integer>
 </resources>
