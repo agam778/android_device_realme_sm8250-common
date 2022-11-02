@@ -7,6 +7,8 @@
 
 prjname=`getprop ro.boot.prjname`
 
+echo 44 > /dev/cpu_dma_latency
+
 if [ "$prjname" = "19706" ] || [ "$prjname" = "19795" ] || [ "$prjname" = "21619" ] || [ "$prjname" = "2161A" ] || [ "$prjname" = "2169A" ] || [ "$prjname" = "2169B" ]; then
     setprop vendor.radio.multisim.config dsds
 elif [ "$prjname" = "19705" ]; then

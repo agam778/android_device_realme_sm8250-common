@@ -64,8 +64,6 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libldacBT_enc \
-    libldacBT_abr \
     libreverbwrapper \
     libsndmonitor \
     libspkrprot \
@@ -110,8 +108,12 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default
 
 PRODUCT_PACKAGES += \
-    libbthost_if \
+    libbthost_if.vendor \
+    libldacBT_bco \
+    libldacBT_bco.vendor \
     liblhdc \
+    libldacBT_enc \
+    libldacBT_abr \
     liblhdcBT_enc \
     liblhdcdec \
     liblhdcBT_dec \

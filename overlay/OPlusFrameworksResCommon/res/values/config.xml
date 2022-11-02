@@ -66,12 +66,12 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-   <integer name="config_autoBrightnessBrighteningLightDebounce">800</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">900</integer>
+   <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
     <!-- Fast brightness animation ramp rate in brightness units per second-->
-    <integer translatable="false" name="config_brightness_ramp_rate_fast">160</integer>
+    <integer translatable="false" name="config_brightness_ramp_rate_fast">180</integer>
     <!-- Slow brightness animation ramp rate in brightness units per second-->
-    <integer translatable="false" name="config_brightness_ramp_rate_slow">80</integer>
+    <integer translatable="false" name="config_brightness_ramp_rate_slow">90</integer>
     <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
          For this time after the screen turns on, the Power Manager
          will not debounce light sensor readings -->
@@ -123,8 +123,8 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>8</item>    <!--  0 - 1  -->
-        <item>19</item>    <!--  1 - 2  -->
+        <item>4</item>    <!--  0 - 1  -->
+        <item>12</item>    <!--  1 - 2  -->
         <item>25</item>    <!--  2 - 3  -->
         <item>28</item>    <!--  3 - 4  -->
         <item>30</item>    <!--  4 - 8  -->
@@ -146,8 +146,9 @@
     </array>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
-    <integer name="config_screenBrightnessDim">15</integer>
+    <integer name="config_screenBrightnessDim">13</integer>
 
+    <integer name="config_screenBrightnessDoze">17</integer>
     <!-- True if the display hardware only has brightness buckets rather than a full range of
          backlight values -->
     <bool name="config_displayBrightnessBucketsInDoze">true</bool>
@@ -158,7 +159,7 @@
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">12</integer>
+    <integer name="config_screenBrightnessSettingMinimum">4</integer>
 
     <!-- Maximum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness above this level. -->
@@ -782,10 +783,6 @@
          of known compatibility issues. -->
     <string-array name="config_highRefreshRateBlacklist">
         <item>"com.netflix.mediaclient"</item>
-        <item>"com.google.android.youtube"</item>
-        <item>"com.google.android.apps.youtube.music"</item>
-        <item>"com.vanced.android.youtube"</item>
-        <item>"com.vanced.android.apps.youtube.music"</item>
         <item>"com.zhiliaoapp.musically"</item>
     </string-array>
 
