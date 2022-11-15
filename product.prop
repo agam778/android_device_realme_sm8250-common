@@ -3,17 +3,9 @@ af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
-ro.af.client_heap_size_kbyte=7168
-
-# BService
-persist.sys.fw.bservice_age=30000
-persist.sys.fw.bservice_limit=20
-persist.sys.fw.bservice_enable=true
-persist.sys.fw.use_trim_settings=true
-persist.sys.fw.trim_enable_memory=8589934592
 
 # CLO Optimizations
-persist.sys.fw.bg_apps_limit=60
+ro.af.client_heap_size_kbyte=7168
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
 ro.lmk.thrashing_limit=30
@@ -22,20 +14,29 @@ ro.lmk.swap_free_low_percentage=10
 ro.lmk.psi_partial_stall_ms=70
 ro.lmk.psi_complete_stall_ms=70
 ro.lmk.use_new_strategy=true
-ro.lmk.psi_scrit_complete_stall_ms=150
-ro.lmk.nstrat_wmark_boost_factor=4
-ro.lmk.direct_reclaim_pressure=45
-ro.lmk.reclaim_scan_threshold=0
-ro.lmk.enable_watermark_check=true
-ro.lmk.enable_userspace_lmk=true
-ro.lmk.enhance_batch_kill=false
-ro.lmk.super_critical=701
-ro.lmk.filecache_min_kb=153600
-ro.lmk.kill_timeout_ms=50
-ro.lmk.stall_limit_critical=40
+ro.lmk.psi_scrit_complete_stall_ms=400
+persist.sys.appcompact.enable_app_compact=false
+persist.sys.appcompact.full_compact_type=2
+persist.sys.appcompact.some_compact_type=4
+persist.sys.appcompact.compact_throttle_somesome=5000
+persist.sys.appcompact.compact_throttle_somefull=10000
+persist.sys.appcompact.compact_throttle_fullsome=500
+persist.sys.appcompact.compact_throttle_fullfull=10000
+persist.sys.appcompact.compact_throttle_bfgs=600000
+persist.sys.appcompact.compact_throttle_persistent=600000
+persist.sys.appcompact.rss_throttle_kb=12000
+persist.sys.appcompact.delta_rss_throttle_kb=8000
+persist.sys.perf.topAppRenderThreadBoost.enable=false
 
 # Service reschedule
 persist.sys.am.reschedule_service=true
+
+# BService
+persist.sys.fw.bservice_age=30000
+persist.sys.fw.bservice_limit=15
+persist.sys.fw.bservice_enable=true
+persist.sys.fw.use_trim_settings=true
+persist.sys.fw.trim_enable_memory=4294967296
 
 # GMS
 ro.opa.device_model_id=ga-oplus-skill-os121-211011
