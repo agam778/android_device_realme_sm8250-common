@@ -326,7 +326,7 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
     OPlusTetheringResCommon \
-    OPlusWifiResCommon
+    WifiResTarget
 
 # YAAP Overlays
 DEVICE_PACKAGE_OVERLAYS += \
