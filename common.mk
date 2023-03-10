@@ -391,6 +391,10 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge \
     sensors.oplus
 
+# ih8sn
+PRODUCT_PACKAGES += \
+    ih8sn
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
@@ -413,7 +417,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/oplus \
-    vendor/qcom/opensource/usb/etc
+    vendor/qcom/opensource/usb/etc \
+    vendor/ih8sn
 
 # Telephony
 PRODUCT_PACKAGES += \
